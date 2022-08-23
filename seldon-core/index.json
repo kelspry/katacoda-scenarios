@@ -1,0 +1,35 @@
+{
+    "title": "Deploying Seldon Core",
+    "description": "Learn how to deploy Seldon Core to a Kubernetes cluster",
+    "difficulty": "Easy",
+    "time": "20 minutes",
+    "details": {
+      "steps": [
+        { "title": "Installing Helm ⛴", "text": "step-installing-helm.md" },
+        { "title": "Installing Seldon 🧠", "text": "step-installing-seldon.md" },
+        { "title": "Configuring Ingress 🚇", "text": "step-configuring-ingress.md" },
+        { "title": "Deploying Your Model 🤖", "text": "step-deploying-your-model.md" },
+        { "title": "Testing Your Model 👩‍🏫", "text": "step-testing-your-model.md" }
+      ],
+      "intro": {
+        "text": "intro.md",
+        "code": "foreground-init.sh"
+      },
+      "finish": {
+        "text": "finish.md"
+      },
+      "assets": {
+        "host01": [
+            {"file": "sklearn_iris_deployment.yaml", "target": "~"}
+        ]
+      }
+    },
+    "environment": {
+      "uilayout": "terminal",
+      "terminals": [{"name": "Terminal 2", "target": "host01"}]
+    },
+    "backend": {
+      "imageid": "kubernetes-cluster-running",
+      "port": 80
+    }
+  }

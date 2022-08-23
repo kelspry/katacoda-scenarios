@@ -1,0 +1,52 @@
+{
+  "title": "Deploying a Dataiku Model with Seldon",
+  "description": "This tutorial will walk through how to create a Seldon deployment using a Dataiku generated model in the PMML format.",
+  "difficulty": "Intermediate",
+  "time": "20 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Setting up Python: Understanding Your Code",
+        "text": "step-understanding-code.md"
+      },
+      {
+        "title": "Adding Requirements",
+        "text": "step-adding-requirements.md"
+      },
+      {
+        "title": "Testing Locally",
+        "text": "step-testing-locally.md"
+      },
+      {
+        "title": "Creating Your Dockerfile",
+        "text": "step-creating-dockerfile.md"
+      },
+      {
+        "title": "Building Your Model Image",
+        "text": "step-building-model-image.md"
+      },
+      {
+        "title": "Deploy Onto Seldon!",
+        "text": "step-deploy-onto-seldon.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "code": "foreground.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+          {"file": "RandomForest.py", "target": "~"}
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu:2004"
+  }
+}
