@@ -72,12 +72,12 @@ The sample model in this instance performing a binary classification between whe
 
 ```(bash)
 {"jsonData":{"data":{"names":["proba_True","proba_False"],"ndarray":[0.25793427065155805,0.742065729348442]}},"meta":{}}
-```
+``` {{execute}}
 
 Before you move on you should stop the model server running locally, return to the original terminal window and use CTRL+C to stop the server. Finally, deactivate your Python virtual environment:
 
 ```(bash)
 deactivate
-```{{exeucte}}
+```{{execute}}
 
 Time to focus on building the container image!
