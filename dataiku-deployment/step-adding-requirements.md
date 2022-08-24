@@ -18,6 +18,15 @@ google-cloud-storage
 werkzeug==2.0.3
 ```
 
+Finally, install any system dependencies that are required.
+
+```(bash)
+apt install default-jre
+```{{execute}}
+
+You will need to type `Y` when prompted. 
+
+
 ## Creating the Virtual Environment
 
 As per best practices you will use a virtual environment to setup the Python dependencies needed for the local testing of your Dataiku model deployment.
@@ -46,3 +55,5 @@ You can now install the necessary Python packages using your recently created `r
 ```(python)
 pip3 install -r requirements.txt
 ```{{execute}}
+
+You can ignore any errors that may show here.
