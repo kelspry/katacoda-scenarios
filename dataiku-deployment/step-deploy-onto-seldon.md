@@ -2,12 +2,7 @@
 
 The final step is to deploy this onto the Seldon platform!
 
-The simplest way to achieve this is to visit the workshop cluster's [user interface](http://35.204.150.218/seldon-deploy/).
-
-You can login in using:
-
-* Username: admin@seldon.io
-* Password: 12341234
+The simplest way to achieve this is to visit the workshop cluster's user interface.
 
 Next, select the "+ CREATE" button, this will bring up the deployment creation wizard. Add a deployment name which is unique and contains no capital letters or underscores, then select "Next".
 

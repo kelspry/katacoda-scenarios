@@ -47,7 +47,7 @@ CMD exec seldon-core-microservice $MODEL_NAME --service-type $SERVICE_TYPE
 
 The Dockerfile necessary to build the Seldon server is simple and straightforward. Stepping through it:
 
-1. The `openjdk` toolkit is used to satisfy the requirement for Java. Meanwhile Python 3.7 is also added to the environment.
+1. The `openjdk` toolkit is used to satisfy the requirement for Java. Meanwhile Python 3.8 is also added to the environment.
 2. Next, the Python packages defined in `requirements.txt` are installed.
 3. Both port 5000 and 9000 are exposed. Seldon automatically configures both REST and gRPC endpoints for all deployments.
 4. Seldon by default runs all containers as user 8888, not as root. This is for security purposes, but to ensure all of your files are accessible at deployment time, including any which we download, `chown` is used to change the userid of the `/app` directory.

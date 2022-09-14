@@ -7,13 +7,13 @@ All of the component pieces are now in place to ensure this is a smooth process.
 ```(bash)
 apt-get update
 docker build . -t dataiku-example:0.1
-```{{execute}}
+```
 
 This will build and tag a Docker image with the `dataiku-example:0.1` tag. Prior to pushing your image to Seldon you will need to login to Docker using your own credentials. 
 
 ```(bash)
 docker login
-```{{execute}}
+```
 
 Re-tag your image to match your Docker username:
 
