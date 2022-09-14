@@ -22,7 +22,7 @@ Finally, install any system dependencies that are required.
 
 ```(bash)
 apt install default-jre
-```{{execute}}
+```
 
 You will need to type `Y` when prompted. 
 
@@ -35,18 +35,18 @@ Start by installing the virtual env manager:
 
 ```(bash)
 apt install python3.8-venv
-```{{execute}}
+```
 
 Next create a new `venv` in your current directory: 
 
 ```(bash)
 python3 -m venv .
-```{{execute}}
+```
 
 Finally activate the environment: 
 ```(bash)
 source ./bin/activate
-```{{execute}}
+```
 
 ## Installing Python Packages
 
@@ -54,6 +54,6 @@ You can now install the necessary Python packages using your recently created `r
 
 ```(python)
 pip3 install -r requirements.txt
-```{{execute}}
+```
 
 You can ignore any errors that may show here.

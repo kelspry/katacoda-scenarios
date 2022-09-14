@@ -6,7 +6,7 @@ In this step of the tutorial you will gain an understanding of the structure of 
 
 ## Understanding the Code
 
-In the Katacoda editor open up the `RandomForest.py` file. The `RandomForest.py` file contains all of the logic required for the Seldon model server.
+In the Killercoda editor open up the `RandomForest.py` file. The `RandomForest.py` file contains all of the logic required for the Seldon model server.
 
 The structure of `RandomForest.py` can be broken down into the following pieces:
 

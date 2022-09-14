@@ -12,13 +12,13 @@ Spin up the Seldon server by calling the `seldon-core-microservice` feeding in t
 seldon-core-microservice RandomForest \
                          --service-type MODEL \
                          --parameters='[{ "name": "model_path", "value": "katacoda-scenarios/dataiku-model/high-revenue-prediction.pmml", "type": "STRING"}]'
-```{{execute}}
+```
 
 You will now see a load of output related to the configuration of your Seldon model server. 
 
 ## Test Your Endpoint
 
-Select the "+" next to "Terminal" and click on "Open New Terminal". This fresh terminal environment will allow you to use `curl` to send requests which will test your Seldon endpoint.
+Open a new terminal. This fresh terminal environment will allow you to use `curl` to send requests which will test your Seldon endpoint.
 
 Custom model servers created using the Seldon tooling currently expect requests to use the Seldon protcol as the request and response schema- you can read more about that [here](https://docs.seldon.io/projects/seldon-core/en/stable/graph/protocols.html#rest-and-grpc-seldon-protocol). This is the reason as to why the request body is structured as a dictionary with a top level key of `data` and further entries for `names`, used to describe the feature names, and `ndarray` which contains the data features themselves.
 
@@ -66,18 +66,18 @@ curl -H 'Content-Type: application/json' \
 }' \
      http://localhost:9000/api/v1.0/predictions
 
-```{{execute}}
+```
 
 The sample model in this instance performing a binary classification between whether a website user is going to be a high revenue generator, or not. Therefore the output from your testing should look similar to the following. 
 
-```(bash)
+```
 {"jsonData":{"data":{"names":["proba_True","proba_False"],"ndarray":[0.25793427065155805,0.742065729348442]}},"meta":{}}
-``` {{execute}}
+``` 
 
 Before you move on you should stop the model server running locally, return to the original terminal window and use CTRL+C to stop the server. Finally, deactivate your Python virtual environment:
 
 ```(bash)
 deactivate
-```{{execute}}
+```
 
 Time to focus on building the container image!
